@@ -39,9 +39,9 @@ _如何使用 & 如何实现_
 ```xml
 <!-- pom.xml 引入 -->
 <dependency>
-    <groupId>com.github.ben-manes.caffeine</groupId>
-    <artifactId>caffeine</artifactId>
-    <version>2.5.5</version>
+  <groupId>net.lightdata.cache</groupId>
+  <artifactId>easy-caffeine</artifactId>
+  <version>1.0.1</version>
 </dependency>
 ```
 
@@ -63,15 +63,14 @@ User old = cache.remove("user:1");
 
 ```shell
 mvn clean package
-java -cp target/easy-caffine-1.0-SNAPSHOT.jar net.lightdata.cache.TestMain
 ```
 
 ### 3. 配置说明 (`src/main/resources/LocalCacheStoreConfig.json`)
 
 ```json
 {
-  "maxMemorySize": 524288000,            // 最大权重 ≈ 500 MB
-  "weightMemoryFactor": 3.0,            // 序列化大小内存放大系数
+  "maxMemorySize": 524288000,            // 最大权重 500 MB
+  "weightMemoryFactor": 3.0,            // 序列化大小内存放大系数，一般为3.0，可调整
   "className": "impl.api.net.datalight.cache.CaffeineLocalCache" // 缓存实现类，可替换
 }
 ```

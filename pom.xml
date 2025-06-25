@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <name>easy-caffeine</name>
-    <url>https://gitee.com/luliang111222/ldl-DeserializationViewer</url>
+    <url>https://gitee.com/luliang111222/easy-caffeine.git</url>
 
     <description>easy-caffeine</description>
     <groupId>net.lightdata.cache</groupId>
@@ -128,9 +128,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@gitee.com:luliang111222/ldl-DeserializationViewer.git</connection>
-        <developerConnection>scm:git:ssh://gitee.com:luliang111222/ldl-DeserializationViewer.git</developerConnection>
-        <url>https://gitee.com/luliang111222/ldl-DeserializationViewer.git</url>
+        <connection>scm:git:git@gitee.com:luliang111222/easy-caffeine.git</connection>
+        <developerConnection>scm:git:ssh://gitee.com:luliang111222/easy-caffeine.git</developerConnection>
+        <url>https://gitee.com/luliang111222/easy-caffeine.git</url>
     </scm>
 
 </project>

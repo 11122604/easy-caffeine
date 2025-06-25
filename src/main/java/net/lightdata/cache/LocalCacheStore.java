@@ -43,8 +43,8 @@ public class LocalCacheStore {
     }
     /**
      *
-     * @param key
-     * @return
+     * @param key 缓存key
+     * @return 缓存对象
      * @param <T>
      */
     public <T> T get(String key){
@@ -52,16 +52,16 @@ public class LocalCacheStore {
     }
     /**
      *
-     * @param key
-     * @param object
-     * @param <T>
+     * @param key 缓存key
+     * @param object 缓存对象
+     * @param expireTime 过期时间 单位秒
      */
     public <T> void put(String key,T object,int expireTime){
         localCache.put(key,object,expireTime);
     }
     /**
      *
-     * @param key
+     * @param key 缓存key
      * @return
      * @param <T>
      */
